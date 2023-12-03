@@ -203,10 +203,10 @@ public class Shop {
                         input.close();
                         System.exit(0);
                     default:
-                        System.out.println("Invalid choice. Please enter a number between 1 and 5.");
+                        System.out.println("Invalid choice. Please enter a number between 1 and 8.");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Please enter an integer.");
+                System.out.println("Invalid choice. Please enter a number between 1 and 8.");
                 input.next(); // Clear the invalid input from the input buffer
             }
         }
