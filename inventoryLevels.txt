@@ -1,0 +1,12 @@
+Cosmetic,Moisturiser,250,10
+Cosmetic,Glowing Skin Serum,300,8
+Cosmetic,Acne Fightining Serum,450,5
+Sports,Activity Tracker,4000,15
+Sports,Wicket Keeping Gloves,100,50
+Sports,Trouser,50,5
+Health,BP meater,900,120
+Health,Vitamins and minerals,320,81
+Health,Pain Relivers,90,51
+Consumable,Soft Drink,5,60
+Consumable,Milk,8,120
+Consumable,Egg,20,50
