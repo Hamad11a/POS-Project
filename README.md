@@ -6,8 +6,8 @@ It works by asking the user to choose one of the following options.
 3. Clear Cart: Remove all items from the user shopping cart.
 4. View Sales: Display the total revenue and the most popular product based on sales.
 5. Add Product: let the user add a new product to the inventory by specifying the type, name, price, and inventory level.
-6. Remove Product:let the user remove a product from the inventory based on its name.\n
-7. Search for Product:let the user to search for a product by name and show if its availabe or no, price, and quantity.
+6. Remove Product:let the user remove a product from the inventory based on its name.
+7. Search for Product:let the user to search for a product by name and show if its availabe or no, price, and quantity.\n
 Also depnding on the type of the product you can have differnt discount:
 CosmeticProduct: 5% discount
 SportProduct: 10% discount
