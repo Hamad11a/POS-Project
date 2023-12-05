@@ -145,20 +145,17 @@ public class Shop {
                         break;
                     case 5:
                         // Add Product
+                         System.out.println("The Product type should be one of these types Cosmetic, Sports, Health and Consumable");
                         System.out.println("Enter product details:");
-                        System.out.print("Enter one of thoes types \"Cosmetic\" or \"Sports\" or \"Health\" or \"Consumable\" : ");
+                        System.out.print("Type: ");
                         String productType = input.next();
-                        if (!productType.equals("Cosmetic") || !productType.equals("Sports") || !productType.equals("Health") || !productType.equals("Consumable")) {
-                            System.out.println("The type should be \"Cosmetic\" or \"Sports\" or \"Health\" or \"Consumable\"");
-                            break;
-                        }
+                        if (productType.equals("Cosmetic") || productType.equals("Sports") || productType.equals("Health") || productType.equals("Consumable")) {
                         System.out.print("Name: ");
                         String productName = input.next();
                         System.out.print("Price: ");
                         double productPrice = input.nextDouble();
                         System.out.print("Inventory Level: ");
                         int inventoryLevel = input.nextInt();
-
                         Product newProduct = new Product();
                         newProduct.setProductType(productType);
                         newProduct.setInventoryLevel(inventoryLevel);
@@ -166,7 +163,10 @@ public class Shop {
                         newProduct.setName(productName);
                         products.add(newProduct);
                         System.out.println("Product added successfully.");
-
+                        }
+                        else
+                             System.out.println("Product type is wrong");
+            
                         break;
                     case 6:
                         // Remove Product
