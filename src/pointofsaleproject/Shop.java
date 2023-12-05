@@ -146,9 +146,9 @@ public class Shop {
                     case 5:
                         // Add Product
                         System.out.println("Enter product details:");
-                        System.out.print("Type: ");
+                        System.out.print("Enter one of thoes types \"Cosmetic\" or \"Sports\" or \"Health\" or \"Consumable\" : ");
                         String productType = input.next();
-                        if (!productType.equals("Cosmetic") || productType.equals("Sports") || productType.equals("Health") || productType.equals("Consumable")) {
+                        if (!productType.equals("Cosmetic") || !productType.equals("Sports") || !productType.equals("Health") || !productType.equals("Consumable")) {
                             System.out.println("The type should be \"Cosmetic\" or \"Sports\" or \"Health\" or \"Consumable\"");
                             break;
                         }
@@ -176,7 +176,7 @@ public class Shop {
                         for (int i = 0; i < products.size(); i++) {
 
                             Product newProduct1 = products.get(i);
-                            if (newProduct1.getName().equals(productToRemove)) {
+                            if (newProduct1.getName().equalsIgnoreCase(productToRemove)) {
                                 products.remove(i);
                                 break;
                             }
